@@ -42,7 +42,7 @@ namespace MagicVilla_VillaAPI.Controllers
 
 		[HttpPost]
 		[ProducesResponseType(StatusCodes.Status201Created)]
-		[ProducesResponseType(StatusCodes.Status404NotFound)]
+		[ProducesResponseType(StatusCodes.Status400BadRequest)]
 		[ProducesResponseType(StatusCodes.Status500InternalServerError)]
 		public ActionResult<VillaDto> CreateVilla([FromBody]VillaDto villa)
 		{

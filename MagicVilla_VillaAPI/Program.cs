@@ -7,6 +7,7 @@ builder.Services.AddControllers(option =>
 	//Return just if the format is acceptable
 	option.ReturnHttpNotAcceptable=true;
 }).AddNewtonsoftJson();
+ 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
